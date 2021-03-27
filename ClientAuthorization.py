@@ -1,18 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import base64
 import datetime
 from urllib.parse import urlencode
 
 import requests
-
-
-# In[3]:
-
 
 class SpotifyAPI(object):
     access_token = None
@@ -146,4 +136,3 @@ class SpotifyAPI(object):
         
         return self.base_search(query_params)
         
-
