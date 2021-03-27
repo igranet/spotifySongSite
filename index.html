@@ -10,7 +10,7 @@
 
   </head>
   <body>
-    
+
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <h5 class="text-white h4">Add to the song Queue</h5>
@@ -19,26 +19,44 @@
     </div>
       <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>
-  
+  <div id = "welcome-header"><p id = "welcome-header-text">Welcome to 6234 Pershing!</p></div>
 
+  <div id = quick options>
+    <div class="center">
+      <button type="button" class="btn btn-outline-success">Queue A Song!</button> <button type="button" class="btn btn-outline-success">Ask for help!</button> <button type="button" class="btn btn-outline-success">FAQs!</button>
+      </div>
+  </div>
   
     </body>
     <style>
-        #main-header-text {
+        #welcome-header-text {
          
          text-align: center;
          font-size:40px;
+         margin-top:10%;
+         background-color:white;
     }
-    #sub-header-main{
-        font-size:30px;
-        animation: color-change 10s infinite;
+    body{
+        background-color:rgb(207, 207, 188);
     }
-
+    .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+.btn-outline-success{
+   font-size:25px;
+    box-shadow: none;
+}
 
 @keyframes color-change {
   0% { color: blue; }
